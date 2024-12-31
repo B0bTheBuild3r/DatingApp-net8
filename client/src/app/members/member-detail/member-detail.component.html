@@ -49,7 +49,7 @@
         <p>{{ member.interests }}</p>
       </tab>
       <tab heading="Photos" #photoTab="tab">
-        @if (photoTab.active) {<gallery [items]="images" class="gallery"> </gallery>}
+        @if (photoTab.active) {<gallery class="gallery" [itemAutosize]="true" [items]="images"> </gallery>}
       </tab>
       <tab heading="Messages">
         <h4>Photos</h4>
